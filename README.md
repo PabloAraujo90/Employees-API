@@ -62,6 +62,7 @@ mvn clean spring-boot:run
 | `POST` | `/api/v1/employees` | Crea un nuevo empleado |
 | `POST` | `/api/v1/employees/batch` | Crea uno o varios empleados por lotes |
 | `PUT` | `/api/v1/employees/{id}` | Actualiza un empleado |
+| `PATCH` | `/api/v1/employees/{id}` | Actualiza una propiedad de un empleado |
 | `DELETE` | `/api/v1/employees/{id}` | Elimina un empleado |
 
 ---
@@ -159,6 +160,6 @@ Si deseas contribuir a este proyecto, por favor envía un **pull request** o con
 ---
 
 ## 📌 Licencia
-Este proyecto está bajo la **MIT License**.  
+Este proyecto está bajo la **N/A**.  
 ```
 
