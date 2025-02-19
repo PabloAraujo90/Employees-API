@@ -157,7 +157,7 @@ Si deseas contribuir a este proyecto, por favor envía un **pull request** o con
 
 📍 **Autor:** Pablo Mendoza  
 📍 **Correo:** blopa.araujo11@gmail.com  
-📍 **GitHub:** [https://github.com/tu-usuario](https://github.com/tu-usuario)  
+📍 **GitHub:** [https://github.com/PabloAraujo90](https://github.com/PabloAraujo90)  
 
 ---
 
