@@ -1,6 +1,8 @@
 # 🏢 Employee API - Spring Boot 3.4.2
 
-API REST para la gestión de empleados, desarrollada con **Spring Boot 3.4.2**, utilizando **JPA (SQL Server), Lombok, ModdelMapper y Swagger (OpenAPI)**.
+Esta es API REST desarrollada con Spring Boot 3.4.2 que permite gestionar empleados mediante operaciones CRUD.
+Esta API está diseñada bajo un esquema modular para que pueda ser escalable y fácil de mantener.
+Incluye documentación con Swagger, pruebas unitarias con JUnit 5 y Mockito, y un sistema de logs y bitácora de eventos para auditoría.
 
 ---
 
@@ -15,7 +17,7 @@ API REST para la gestión de empleados, desarrollada con **Spring Boot 3.4.2**, 
 - **DTO Pattern**
 - **Swagger (OpenAPI)**
 - **JUnit 5 / Mockito**
-- **Logback para manejo de logs**
+- **Slf4j para manejo de logs**
 - **Postman Collection**
 
 ---
@@ -24,7 +26,7 @@ API REST para la gestión de empleados, desarrollada con **Spring Boot 3.4.2**, 
 
 ### 👅 1️⃣ Clonar el repositorio
 ```sh
-git clone https://github.com/tu-usuario/employees-api.git
+git clone https://github.com/PabloAraujo90/Employees-API.git
 cd employees-api
 ```
 
