@@ -93,7 +93,7 @@ curl --location --request POST 'http://localhost:8080/api/v1/employees' \
   "lastName": "Mendoza",
   "secondLastName": "Araujo",
   "gender": "Male",
-  "birthDate": "1990-12-28T00:00:00Z",
+  "birthDate": "28-12-1990",
   "position": "Software Architect",
   "age": 34
 }'
@@ -110,7 +110,7 @@ curl --location --request PUT 'http://localhost:8080/api/v1/employees/1' \
   "lastName": "Mendoza",
   "secondLastName": "Araujo",
   "gender": "Male",
-  "birthDate": "1990-12-28T00:00:00Z",
+  "birthDate": "28-12-1990",
   "position": "Software Architect",
   "age": 34
 }'
