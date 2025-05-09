@@ -1,0 +1,613 @@
+2025-05-08 19:10:11 [restartedMain] INFO  c.h.e.EmployeesApiApplication - Starting EmployeesApiApplication using Java 17.0.11 with PID 33932 (C:\Users\pmend\Downloads\employees-api\employees-api\target\classes started by pmend in C:\Users\pmend\Downloads\employees-api\employees-api)
+2025-05-08 19:10:11 [restartedMain] INFO  c.h.e.EmployeesApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-08 19:10:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-08 19:10:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-08 19:10:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-08 19:10:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2025-05-08 19:10:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-08 19:10:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-08 19:10:16 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-05-08 19:10:16 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-08 19:10:16 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4775 ms
+2025-05-08 19:10:17 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-08 19:10:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-08 19:10:18 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 8c48a982-ea57-44be-a558-011180d5b9d3
+2025-05-08 19:10:18 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-08 19:10:19 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 19:10:21 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-08 19:10:21 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-08 19:10:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-08 19:10:21 [restartedMain] INFO  c.h.e.EmployeesApiApplication - Started EmployeesApiApplication in 12.003 seconds (process running for 14.09)
+2025-05-08 19:12:29 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-08 19:12:29 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /api/v1/employees/
+2025-05-08 19:12:29 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = PostmanRuntime/7.43.3
+2025-05-08 19:12:29 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:12:29 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: postman-token = 3a2142e3-b6c6-428e-b8a2-a6151ebc10bf
+2025-05-08 19:12:29 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:12:29 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br
+2025-05-08 19:12:29 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:12:35 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /api/v1/employees
+2025-05-08 19:12:35 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = PostmanRuntime/7.43.3
+2025-05-08 19:12:35 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:12:35 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: postman-token = 53953f10-fd8f-424e-9cf5-f66b5b26f5c6
+2025-05-08 19:12:35 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:12:35 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br
+2025-05-08 19:12:35 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:12:35 [http-nio-8080-exec-3] INFO  c.h.e.services.EmployeeServiceImpl - Fetching all employees
+2025-05-08 19:12:35 [http-nio-8080-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Invalid object name 'empleado'.
+2025-05-08 19:12:35 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select e1_0.empleado_id,e1_0.sexo,e1_0.apellido_materno,e1_0.apellido_paterno,e1_0.edad,e1_0.fecha_de_nacimiento,e1_0.primer_nombre,e1_0.puesto,e1_0.segundo_nombre from empleado e1_0] [Invalid object name 'empleado'.] [n/a]; SQL [n/a]] with root cause
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'empleado'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:270)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1735)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:675)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:594)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7745)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4391)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:276)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:509)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:250)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:171)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:74)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:355)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:152)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:442)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:362)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:380)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:393)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy4/jdk.proxy4.$Proxy134.findAll(Unknown Source)
+	at com.hypertech.employees.services.EmployeeServiceImpl.getAllEmployees(EmployeeServiceImpl.java:30)
+	at com.hypertech.employees.controllers.EmployeeController.getAllEmployees(EmployeeController.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.hypertech.employees.utils.RequestLoggingFilter.doFilter(RequestLoggingFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-05-08 19:17:20 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-05-08 19:17:20 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08 19:17:20 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-08 19:17:20 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 19:17:20 [RMI TCP Connection(15)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-08 19:17:20 [RMI TCP Connection(15)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-08 19:24:42 [restartedMain] INFO  c.h.e.EmployeesApiApplication - Starting EmployeesApiApplication using Java 17.0.11 with PID 28412 (C:\Users\pmend\Downloads\employees-api\employees-api\target\classes started by pmend in C:\Users\pmend\Downloads\employees-api\employees-api)
+2025-05-08 19:24:42 [restartedMain] INFO  c.h.e.EmployeesApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-08 19:24:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-08 19:24:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-08 19:24:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-08 19:24:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2025-05-08 19:24:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-08 19:24:45 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-08 19:24:45 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-05-08 19:24:45 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-08 19:24:45 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2921 ms
+2025-05-08 19:24:46 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-08 19:24:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-08 19:24:46 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 2efbdd30-7db8-4fd1-ae76-6c58ea031805
+2025-05-08 19:24:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-08 19:24:48 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 19:24:50 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-08 19:24:51 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-08 19:24:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-08 19:24:51 [restartedMain] INFO  c.h.e.EmployeesApiApplication - Started EmployeesApiApplication in 9.809 seconds (process running for 11.393)
+2025-05-08 19:24:56 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-08 19:24:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /api/v1/employees
+2025-05-08 19:24:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = PostmanRuntime/7.43.3
+2025-05-08 19:24:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:24:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: postman-token = c8a70b30-8f23-46b6-948e-150621f9e44f
+2025-05-08 19:24:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:24:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br
+2025-05-08 19:24:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:24:57 [http-nio-8080-exec-1] INFO  c.h.e.services.EmployeeServiceImpl - Fetching all employees
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/index.html
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: upgrade-insecure-requests = 1
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = document
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = navigate
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = none
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-user = ?1
+2025-05-08 19:25:47 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=0, i
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/swagger-ui.css
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = text/css,*/*;q=0.1
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = style
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:25:47 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=2
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/index.css
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = text/css,*/*;q=0.1
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = style
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:25:47 [http-nio-8080-exec-6] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=2
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/swagger-ui-bundle.js
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/swagger-ui-standalone-preset.js
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = script
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = script
+2025-05-08 19:25:47 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 19:25:47 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/swagger-initializer.js
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = script
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 19:25:47 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/favicon-32x32.png
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = image
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:25:47 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=6
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /v3/api-docs/swagger-config
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = empty
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = cors
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:25:47 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=4
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /v3/api-docs
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = application/json,*/*
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = empty
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = cors
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=4
+2025-05-08 19:25:47 [http-nio-8080-exec-1] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 253 ms
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: POST | Path: /api/v1/employees
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: content-type = application/json
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: content-length = 186
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: origin = http://localhost:8080
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = empty
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = cors
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:29:06 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=0
+2025-05-08 19:29:06 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value]
+2025-05-08 19:29:34 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /api/v1/employees
+2025-05-08 19:29:34 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = PostmanRuntime/7.43.4
+2025-05-08 19:29:34 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:29:34 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: postman-token = 69da4a5e-de4b-4e0e-b423-30f6822fba91
+2025-05-08 19:29:34 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:29:34 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br
+2025-05-08 19:29:34 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:29:34 [http-nio-8080-exec-10] INFO  c.h.e.services.EmployeeServiceImpl - Fetching all employees
+2025-05-08 19:29:37 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /api/v1/employees
+2025-05-08 19:29:37 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = PostmanRuntime/7.43.4
+2025-05-08 19:29:37 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:29:37 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: postman-token = 13cd41cf-95d5-4477-955c-53b81858d053
+2025-05-08 19:29:37 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:29:37 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br
+2025-05-08 19:29:37 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:29:37 [http-nio-8080-exec-2] INFO  c.h.e.services.EmployeeServiceImpl - Fetching all employees
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: POST | Path: /api/v1/employees
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: content-type = application/json
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: content-length = 186
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: origin = http://localhost:8080
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = empty
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = cors
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:29:38 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=0
+2025-05-08 19:29:38 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value]
+2025-05-08 19:29:53 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /api/v1/employees
+2025-05-08 19:29:53 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = PostmanRuntime/7.43.4
+2025-05-08 19:29:53 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:29:53 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: postman-token = b217b200-1b2e-4643-a519-9a0315501adf
+2025-05-08 19:29:53 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:29:53 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br
+2025-05-08 19:29:53 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:29:53 [http-nio-8080-exec-4] INFO  c.h.e.services.EmployeeServiceImpl - Fetching all employees
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: POST | Path: /api/v1/employees
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: content-type = application/json
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: content-length = 164
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: origin = http://localhost:8080
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = empty
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = cors
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:30:52 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=0
+2025-05-08 19:30:52 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name]
+2025-05-08 19:31:20 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /api/v1/employees
+2025-05-08 19:31:20 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = PostmanRuntime/7.43.4
+2025-05-08 19:31:20 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:31:20 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: postman-token = 789cab4a-c1d7-4bb7-b585-0d9b309bf8e9
+2025-05-08 19:31:20 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:31:20 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br
+2025-05-08 19:31:20 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:31:20 [http-nio-8080-exec-7] INFO  c.h.e.services.EmployeeServiceImpl - Fetching all employees
+2025-05-08 19:31:21 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /api/v1/employees
+2025-05-08 19:31:21 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = PostmanRuntime/7.43.4
+2025-05-08 19:31:21 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:31:21 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: postman-token = de56a57b-da50-4978-9fc4-dfaddd997907
+2025-05-08 19:31:21 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:31:21 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br
+2025-05-08 19:31:21 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:31:21 [http-nio-8080-exec-8] INFO  c.h.e.services.EmployeeServiceImpl - Fetching all employees
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: POST | Path: /api/v1/employees
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: content-type = application/json
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: content-length = 163
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: origin = http://localhost:8080
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = empty
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = cors
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=0
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.services.EmployeeServiceImpl - Saving new employee: Pablo
+2025-05-08 19:32:23 [http-nio-8080-exec-10] INFO  c.h.e.services.EmployeeServiceImpl - Employee Pablo saved successfully with id 1
+2025-05-08 19:32:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /api/v1/employees
+2025-05-08 19:32:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = PostmanRuntime/7.43.4
+2025-05-08 19:32:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 19:32:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: postman-token = 8a324dce-39fa-4de8-8e7f-beef252159a7
+2025-05-08 19:32:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 19:32:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br
+2025-05-08 19:32:56 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 19:32:56 [http-nio-8080-exec-1] INFO  c.h.e.services.EmployeeServiceImpl - Fetching all employees
+2025-05-08 19:53:42 [RMI TCP Connection(37)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-05-08 19:53:42 [RMI TCP Connection(37)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08 19:53:42 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-08 19:53:42 [RMI TCP Connection(37)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 19:53:42 [RMI TCP Connection(37)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-08 19:53:42 [RMI TCP Connection(37)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-08 21:08:20 [restartedMain] INFO  c.h.e.EmployeesApiApplication - Starting EmployeesApiApplication using Java 17.0.11 with PID 19508 (C:\Users\pmend\Downloads\employees-api\employees-api\target\classes started by pmend in C:\Users\pmend\Downloads\employees-api\employees-api)
+2025-05-08 21:08:20 [restartedMain] INFO  c.h.e.EmployeesApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-08 21:08:20 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-08 21:08:20 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-08 21:08:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-08 21:08:26 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 280 ms. Found 1 JPA repository interface.
+2025-05-08 21:08:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-08 21:08:28 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-08 21:08:28 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-05-08 21:08:28 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-08 21:08:28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8312 ms
+2025-05-08 21:08:32 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-08 21:08:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-08 21:08:34 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: a00e5d4f-5fe1-4bf6-b6d7-2100ad7f5a16
+2025-05-08 21:08:34 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-08 21:08:40 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 21:08:46 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-08 21:08:48 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-08 21:08:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-08 21:08:49 [restartedMain] INFO  c.h.e.EmployeesApiApplication - Started EmployeesApiApplication in 30.66 seconds (process running for 34.263)
+2025-05-08 21:36:58 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-08 21:36:58 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08 21:36:58 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-08 21:36:58 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 21:36:58 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-08 21:36:58 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-08 21:36:58 [restartedMain] INFO  c.h.e.EmployeesApiApplication - Starting EmployeesApiApplication using Java 17.0.11 with PID 19508 (C:\Users\pmend\Downloads\employees-api\employees-api\target\classes started by pmend in C:\Users\pmend\Downloads\employees-api\employees-api)
+2025-05-08 21:36:58 [restartedMain] INFO  c.h.e.EmployeesApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-08 21:36:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-08 21:36:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2025-05-08 21:36:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-08 21:36:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-08 21:36:59 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-05-08 21:36:59 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-08 21:36:59 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 565 ms
+2025-05-08 21:36:59 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-08 21:36:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-08 21:36:59 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection ConnectionID:11 ClientConnectionId: 5e4e99e7-6498-4486-bd60-88f343320d28
+2025-05-08 21:36:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-08 21:37:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 21:37:00 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-08 21:37:00 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-08 21:37:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-08 21:37:00 [restartedMain] INFO  c.h.e.EmployeesApiApplication - Started EmployeesApiApplication in 1.684 seconds (process running for 1725.759)
+2025-05-08 21:37:00 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-08 21:37:02 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-05-08 21:37:02 [Thread-7] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08 21:37:02 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-08 21:37:02 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 21:37:02 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-08 21:37:02 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-08 21:37:02 [restartedMain] INFO  c.h.e.EmployeesApiApplication - Starting EmployeesApiApplication using Java 17.0.11 with PID 19508 (C:\Users\pmend\Downloads\employees-api\employees-api\target\classes started by pmend in C:\Users\pmend\Downloads\employees-api\employees-api)
+2025-05-08 21:37:02 [restartedMain] INFO  c.h.e.EmployeesApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-08 21:37:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-08 21:37:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interface.
+2025-05-08 21:37:02 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-08 21:37:02 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-08 21:37:02 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-05-08 21:37:02 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-08 21:37:02 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 427 ms
+2025-05-08 21:37:02 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-08 21:37:02 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-08 21:37:02 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection ConnectionID:21 ClientConnectionId: 175400e0-542c-4780-8027-3494645e4504
+2025-05-08 21:37:02 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-08 21:37:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 21:37:03 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-08 21:37:03 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-08 21:37:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-08 21:37:03 [restartedMain] INFO  c.h.e.EmployeesApiApplication - Started EmployeesApiApplication in 0.969 seconds (process running for 1728.363)
+2025-05-08 21:37:03 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/index.html
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: upgrade-insecure-requests = 1
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = document
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = navigate
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = none
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-user = ?1
+2025-05-08 21:49:23 [http-nio-8080-exec-1] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=0, i
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/swagger-ui.css
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = text/css,*/*;q=0.1
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = style
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 21:49:23 [http-nio-8080-exec-2] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=2
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/index.css
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/swagger-ui-bundle.js
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/swagger-ui-standalone-preset.js
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = text/css,*/*;q=0.1
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/swagger-initializer.js
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = style
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = script
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = script
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 21:49:23 [http-nio-8080-exec-4] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 21:49:23 [http-nio-8080-exec-5] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 21:49:23 [http-nio-8080-exec-3] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=2
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = script
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 21:49:23 [http-nio-8080-exec-7] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /swagger-ui/favicon-32x32.png
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = image
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = no-cors
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 21:49:23 [http-nio-8080-exec-8] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=6
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /v3/api-docs/swagger-config
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = */*
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = empty
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = cors
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 21:49:23 [http-nio-8080-exec-9] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=4
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Request Method: GET | Path: /v3/api-docs
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: host = localhost:8080
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept = application/json,*/*
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-language = es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: accept-encoding = gzip, deflate, br, zstd
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: referer = http://localhost:8080/swagger-ui/index.html
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: dnt = 1
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: connection = keep-alive
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-dest = empty
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-mode = cors
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: sec-fetch-site = same-origin
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  c.h.e.utils.RequestLoggingFilter - Header: priority = u=4
+2025-05-08 21:49:24 [http-nio-8080-exec-10] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 218 ms
+2025-05-08 22:02:24 [RMI TCP Connection(74)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-05-08 22:02:24 [RMI TCP Connection(74)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08 22:02:24 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-08 22:02:24 [RMI TCP Connection(74)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08 22:02:24 [RMI TCP Connection(74)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-08 22:02:24 [RMI TCP Connection(74)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.

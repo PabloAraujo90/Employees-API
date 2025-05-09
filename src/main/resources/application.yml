@@ -1,0 +1,25 @@
+spring:
+  application:
+    name:  employees-api
+    #BASE DE DATOS SQL AZURE (TEST)
+  datasource:
+    url: jdbc:sqlserver://hypertech.database.windows.net;databaseName=demodbInvx;
+    username: hyptech
+    password: Hyp3rt3ch2025
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true   
+  jackson:
+    time-zone: America/Mexico_City
+      
+server:
+  port: 8080
+      
+logging:
+  level:
+    root: info
+    org.springframework.web: warn
+    org.hibernate: error
+
