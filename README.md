@@ -36,8 +36,8 @@ Modifica el archivo `src/main/resources/application.properties` con los datos de
 ```properties
 datasource:
     url: jdbc:sqlserver://hypertech.database.windows.net;databaseName=demodbInvx;
-    username: hyptech
-    password: Hyp3rt3ch2025
+    username: 
+    password: 
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
 ```
 
